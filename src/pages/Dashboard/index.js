@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import View from "components/atoms/View";
 
 class Dashboard extends Component {
   render() {
-    return <h1>INI DASHBOARD</h1>;
+    return (
+      <View>sadasdsa</View>
+    );
   }
 }
 
