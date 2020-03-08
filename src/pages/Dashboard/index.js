@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import View from "components/atoms/View";
+import { BaseLayout } from "containers";
 
 class Dashboard extends Component {
   render() {
     return (
-      <View>sadasdsa</View>
+      <BaseLayout>
+        <View>sadasdsa</View>
+      </BaseLayout>
     );
   }
 }

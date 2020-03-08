@@ -1,21 +1,23 @@
-import React, { Component } from "react";
+import { React, Component } from "libraries";
+import { Container, Section } from "components";
+import { BaseSidebar } from "containers";
 
 class BaseLayout extends Component {
   render() {
     return (
-      <div className="container">
+      <Container>
         <header className="header-wrap">
           <h1>{this.props.headerTitle}</h1>
         </header>
-        <section id="main-section" className="section-container">
-          <div className="main-section-wrapper">
+        <Section id="main-section" className="section-container">
+          <div className="main-section-row">
+            <BaseSidebar>
+              <h1>Ini Sidebar</h1>
+            </BaseSidebar>
             <main className="main-section-content">{this.props.children}</main>
-            <aside className="main-section-sidebar">
-              <h1>Sidebar</h1>
-            </aside>
           </div>
-        </section>
-      </div>
+        </Section>
+      </Container>
     );
   }
 }

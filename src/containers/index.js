@@ -1,3 +1,4 @@
 import BaseLayout from "./BaseLayout";
+import BaseSidebar from "./BaseSidebar";
 
-export { BaseLayout };
+export { BaseLayout, BaseSidebar };

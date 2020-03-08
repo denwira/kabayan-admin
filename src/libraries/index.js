@@ -1,4 +1,6 @@
-import React, {Component, Fragment} from 'react';
+import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 
+export { React, Component, Fragment, PropTypes };
 
-export {React, Component, Fragment}
+export * from "react-router-dom";
