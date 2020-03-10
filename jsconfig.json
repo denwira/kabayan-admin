@@ -5,6 +5,8 @@
     "baseUrl": "./src",
     "sourceMap": true,
     "paths": {
+      "name": ["./libraries"],
+      "assets": ["./assets"],
       "components": ["./components"],
       "components/atoms": ["./components/atoms"],
       "components/molecules": ["./components/molecules"],

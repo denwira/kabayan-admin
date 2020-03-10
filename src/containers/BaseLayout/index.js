@@ -1,5 +1,6 @@
 import { React, Component } from "libraries";
-import { Container, Section } from "components";
+import { Container, Section, Anchor, Button, View } from "components";
+
 import { BaseSidebar } from "containers";
 
 class BaseLayout extends Component {
@@ -10,12 +11,16 @@ class BaseLayout extends Component {
           <h1>{this.props.headerTitle}</h1>
         </header>
         <Section id="main-section" className="section-container">
-          <div className="main-section-row">
+          <View className="main-section-row">
             <BaseSidebar>
-              <h1>Ini Sidebar</h1>
+              <Button variant="primary">Click Me</Button>
+              <Button>Click Me</Button>
+              <View className="header-logo">
+                <Anchor className="btn btn-primary">Button</Anchor>
+              </View>
             </BaseSidebar>
             <main className="main-section-content">{this.props.children}</main>
-          </div>
+          </View>
         </Section>
       </Container>
     );

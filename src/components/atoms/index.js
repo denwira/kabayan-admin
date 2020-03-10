@@ -3,5 +3,6 @@ import View from "./View";
 import Container from "./Container";
 import Image from "./Image";
 import Section from "./Section";
+import Anchor from "./Anchor";
 
-export { Button, View, Container, Image, Section };
+export { Button, View, Container, Image, Section, Anchor };

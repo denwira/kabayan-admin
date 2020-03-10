@@ -1,0 +1,53 @@
+@mixin buttonVariant($color) {
+  background-color: $color;
+  border-color: $color;
+
+  &:hover {
+    background-color: darken($color, 8%);
+    border-color: darken($color, 8%);
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    background-color: darken($color, 15%);
+    border-color: darken($color, 15%);
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    box-shadow: 0 0px 8px -1px darken($color, 8%);
+    background-color: darken($color, 15%);
+    border-color: darken($color, 15%);
+  }
+}
+
+@mixin buttonSize($percent) {
+  padding: calc(#{$gutter-xs} + #{$percent}) calc(#{$gutter-m} + #{$percent});
+}
+
+@mixin buttonOutline($variant) {
+  background-color: $bg-transparent;
+  color: $variant;
+
+  &:hover {
+    color: $variant;
+  }
+}
+
+.a-button__element {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.a-button__element--primary {
+  background-color: red;
+  color: #fff;
+}
+
+.a-button__element--default {
+  background-color: #ddd;
+  color: #fff;
+}
