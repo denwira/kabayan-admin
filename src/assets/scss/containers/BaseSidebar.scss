@@ -1,0 +1,38 @@
+.sidebar {
+  &__Inner {
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  }
+  &__brandTitle {
+    justify-content: space-between;
+    padding: 14px;
+  }
+}
+
+.m-navigation {
+  &__groupNav {
+    padding: 1rem;
+    background-color: #eee;
+  }
+  &__navItem {
+    width: 100%;
+    justify-content: space-between;
+    a {
+      padding: 10px;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: inherit;
+      opacity: 0.8;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+  }
+}

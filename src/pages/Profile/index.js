@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import { BaseLayout } from "containers";
 
 class Profile extends Component {
   render() {
-    return <h1>Ini Profile</h1>;
+    return (
+      <BaseLayout>
+        <h1>Profile</h1>
+      </BaseLayout>
+    );
   }
 }
 
