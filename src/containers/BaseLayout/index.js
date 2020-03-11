@@ -12,13 +12,7 @@ class BaseLayout extends Component {
         </header>
         <Section id="main-section" className="section-container">
           <View className="main-section-row">
-            <BaseSidebar>
-              <Button variant="primary">Click Me</Button>
-              <Button>Click Me</Button>
-              <View className="header-logo">
-                <Anchor className="btn btn-primary">Button</Anchor>
-              </View>
-            </BaseSidebar>
+            <BaseSidebar />
             <main className="main-section-content">{this.props.children}</main>
           </View>
         </Section>
