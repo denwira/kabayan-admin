@@ -18,6 +18,7 @@
   &__navItem {
     width: 100%;
     justify-content: space-between;
+    transition: all 0.25s ease;
     a {
       padding: 10px;
       -webkit-transition: all 0.25s ease;
@@ -33,6 +34,21 @@
       opacity: 0.8;
       font-size: 0.85rem;
       text-decoration: none;
+    }
+    &:hover {
+      transform: translateX(5px);
+      transition: all 0.25s ease;
+    }
+  }
+  .active {
+    transform: unset;
+    a {
+      border-radius: 4px;
+      padding: 8px 12px;
+      box-shadow: 0 0 10px 1px #948bf4;
+      background: #948bf4;
+      color: #fff;
+      opacity: 1;
     }
   }
 }
