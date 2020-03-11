@@ -1,7 +1,7 @@
 import { React, Component } from "libraries";
 import { Container, Section, Anchor, Button, View } from "components";
 
-import { BaseSidebar } from "containers";
+import { BaseSidebar, BaseHeader } from "containers";
 
 class BaseLayout extends Component {
   render() {
@@ -13,7 +13,10 @@ class BaseLayout extends Component {
         <Section id="main-section" className="section-container">
           <View className="main-section-row">
             <BaseSidebar />
-            <main className="main-section-content">{this.props.children}</main>
+            <main className="main-section-content">
+              <BaseHeader />
+              {this.props.children}
+            </main>
           </View>
         </Section>
       </Container>
