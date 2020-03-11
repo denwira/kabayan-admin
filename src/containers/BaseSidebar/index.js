@@ -8,7 +8,7 @@ class BaseSidebar extends Component {
         <View className="sidebar__Inner">
           <View className="sidebar__brandTitle row">
             <h1>Brand Title</h1>
-            <span>icon</span>
+            <span><IoIosRadioButtonOff /></span>
           </View>
           <Section className="m-navigation">
               <View className="m-navigation__groupNav">
@@ -19,7 +19,7 @@ class BaseSidebar extends Component {
                     </View>
                   </li>
                   <li>
-                    <View className="m-navigation__navItem">
+                    <View className="m-navigation__navItem active">
                         <Link to="/profile"><a>Profile</a></Link>
                     </View>
                   </li>
@@ -27,19 +27,19 @@ class BaseSidebar extends Component {
               </View>
               <View className="m-navigation__mainNav row">
                 <View className="m-navigation__navItem">
-                  <span><IoIosRadioButtonOff /></span><Link><a>Menu 1</a></Link>
+                  <Link> <span><IoIosRadioButtonOff /></span> <a>Menu 1</a></Link>
                   </View>
                 <View className="m-navigation__navItem">
-                  <span><IoIosRadioButtonOff /></span><Link><a>Menu 2</a></Link>
+                  <Link> <span><IoIosRadioButtonOff /></span> <a>Menu 2</a></Link>
                   </View>
                 <View className="m-navigation__navItem">
-                  <span><IoIosRadioButtonOff /></span><Link><a>Menu 3</a></Link>
+                  <Link> <span><IoIosRadioButtonOff /></span> <a>Menu 3</a></Link>
                   </View>
                 <View className="m-navigation__navItem">
-                  <span><IoIosRadioButtonOff /></span><Link><a>Menu 4</a></Link>
+                  <Link> <span><IoIosRadioButtonOff /></span> <a>Menu 4</a></Link>
                   </View>
                 <View className="m-navigation__navItem">
-                  <span><IoIosRadioButtonOff /></span><Link><a>Menu 5</a></Link>
+                  <Link> <span><IoIosRadioButtonOff /></span> <a>Menu 5</a></Link>
                   </View>
               </View>
           </Section>
