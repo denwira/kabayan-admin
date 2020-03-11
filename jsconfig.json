@@ -12,7 +12,8 @@
       "components/molecules": ["./components/molecules"],
       "components/organisms": ["./components/organisms"],
       "pages": ["./pages"],
-      "containers": ["./containers"]
+      "containers": ["./containers"],
+      "routes": ["./routes"]
     }
   }
 }

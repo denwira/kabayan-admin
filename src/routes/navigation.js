@@ -1,45 +1,48 @@
+import {React} from 'libraries';
+import { IoIosRadioButtonOff, IoIosKeypad } from "react-icons/io";
+
 const mainNav = [
   {
     id: 1,
     name: 'Dashboard',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosKeypad />
   },
   {
     id: 2,
     name: 'Profile',
     path: '/profile',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   },
   {
     id: 3,
     name: 'Menu',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   },
   {
     id: 4,
-    name: 'Menu',
+    name: 'Email',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   },
   {
     id: 5,
-    name: 'Menu',
+    name: 'Management User',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   },
   {
     id: 6,
-    name: 'Menu',
+    name: 'Component',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   },
   {
     id: 7,
-    name: 'Menu',
+    name: 'Iconss',
     path: '/',
-    icon: 'IoIosRadioButtonOff'
+    icons: <IoIosRadioButtonOff />
   }
 ]
 
