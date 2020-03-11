@@ -1,5 +1,6 @@
 import { React, Component } from "libraries";
 import { Section, View } from "components";
+import { IoMdCheckboxOutline } from "react-icons/io";
 
 class BaseHeader extends Component {
   render() {
@@ -8,10 +9,10 @@ class BaseHeader extends Component {
         <View className="header__inner">
           <View className="header__inner--flex row">
             <View className="header__item">
-              <h1>Kiri</h1>
+              <span style={{ fontSize: 12 }}>March 11th 2020, 4:04:46 pm</span>
             </View>
             <View className="header__item">
-              <h1>Kanan</h1>
+              <View className="header__profile"></View>
             </View>
           </View>
         </View>
