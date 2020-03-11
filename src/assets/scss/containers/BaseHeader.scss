@@ -1,0 +1,15 @@
+.header {
+  max-width: 1020px;
+  margin: 20px auto;
+  padding: 0.5rem;
+
+  &__inner {
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    &--flex {
+      justify-content: space-between;
+    }
+  }
+}
